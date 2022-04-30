@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Visualization 2</title>
+        <style>
+            body{
+                background: #3e3c3c;
+                color: rgb(255, 255, 255);
+            }
+        </style>
+
+        <script type="text/javascript"
+         src="https://public.tableau.com/javascripts/api/tableau-2.min.js">
+        </script>
+
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body onload="initViz();">
+        <h1>Graph 2</h1>
+
+        <div class="container" style="text-align: center;">
+            <h5>Select Date</h5>
+            <select>
+                <option disabled hidden selected>Select</option>
+
+                <option value="Date1">Date 1</option>
+                <option value="Date2">Date 2</option>
+            </select>
+            
+            <h2>Graph</h2>
+        </div>
+
+        <div id="vizContainer" style="width:800px; height:700px;"></div>
+    </body> 
+
+
+</html>  

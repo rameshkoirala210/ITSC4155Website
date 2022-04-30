@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Visualization 1</title>
+        <style>
+            body{
+                background: #3e3c3c;
+                color: rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Graph 1</h1>
+
+        <h5>Select Which Date</h5>
+        <select id="list" onchange="getSelectValue();">
+            <option value="nothing" selected="select">Select Date</option>
+            
+            <option value="Date1">Date 1</option>
+            <option value="Date2">Date 2</option>
+            <option value="Date3">Date 3</option>
+            <option value="Date4">Date 4</option>
+            <option value="Date5">Date 5</option>
+            <option value="Date6">Date 6</option>
+            <option value="Date7">Date 7</option>
+            <option value="Date8">Date 8</option>
+            <option value="Date9">Date 9</option>
+            <option value="Date10">Date 10</option>
+            <option value="Date11">Date 11</option>
+            <option value="Date12">Date 12</option>
+        </select>
+        <script type="text/javascript">
+            function getSelectValue(){
+            var selectedValue = document.getElementById("list");
+            selectedValue.onchange = function(){
+                var userOption = this.options[this.selectedIndex];
+                if(userOption.value != "nothing"){
+                    console.log(userOption.value)
+                }
+            }
+            }
+        </script>
+        
+
+        <h5>Compare 2 Graphs</h5>\
+
+
+    </body> 
+
+
+</html>  
