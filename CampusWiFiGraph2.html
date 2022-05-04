@@ -16,22 +16,30 @@
 
         <script type="text/javascript" src="script.js"></script>
     </head>
-    <body onload="initViz();">
-        <h1>Graph 2</h1>
+    <body>
+        <h1>UNCC Wifi Data</h1>
 
         <div class="container" style="text-align: center;">
             <h5>Select Date</h5>
-            <select>
+            <select id="DateList" onchange="dateOnChange()">
                 <option disabled hidden selected>Select</option>
+                <option value="Date1">Date 1</option>
+                <option value="Date2">Date 2</option>
+            </select>
 
+            <h5>Compare Date</h5>
+            <select id="CompareDateList" onchange="compareOnChange()">
+                <option disabled hidden selected>Select</option>
                 <option value="Date1">Date 1</option>
                 <option value="Date2">Date 2</option>
             </select>
             
             <h2>Graph</h2>
+            <script src="script.js"></script>
         </div>
 
         <div id="vizContainer" style="width:800px; height:700px;"></div>
+        <div id="vizCompareContainer" style="width:800px; height:700px;"></div>
     </body> 
 
 
