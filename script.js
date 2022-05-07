@@ -1,8 +1,8 @@
 
     var dict = {
-        August2: "https://public.tableau.com/app/profile/mihir.vashi/viz/August2ndNumberofConnectionstoAPs/2NumConnectionsAPs?publish=yes",
+        August2: "https://public.tableau.com/views/August2ndNumberofConnectionstoAPs/2NumConnectionsAPs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         August3: "",
-        August9: "https://public.tableau.com/app/profile/mihir.vashi/viz/Aug9NumberOfConnectionsToAPs/Aug9NumConnectionsAPs?publish=yes",
+        August9: "https://public.tableau.com/views/Aug9NumberOfConnectionsToAPs/Aug9NumConnectionsAPs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         August10: "",
         August16: "https://public.tableau.com/views/August16NumberofConnectionstoAPs/August16NumberofConnectionstoAPs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         August17: "",
