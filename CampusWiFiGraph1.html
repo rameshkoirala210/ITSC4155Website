@@ -1,51 +1,127 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <title>Visualization 1</title>
         <style>
             body{
-                background: #3e3c3c;
-                color: rgb(255, 255, 255);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                color: rgb(185, 151, 91);
+                background-color: rgb(28, 98, 64);
             }
         </style>
+
+        <script type="text/javascript"
+         src="https://public.tableau.com/javascripts/api/tableau-2.min.js">
+        </script>
+
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
-        <h1>Graph 1</h1>
+        <h1 style="text-align: center; font-size: 50px;">Geolocation</h1>
 
-        <h5>Select Which Date</h5>
-        <select id="list" onchange="getSelectValue();">
-            <option value="nothing" selected="select">Select Date</option>
+        <div class="container" style="text-align: center;">
+            <h5 style="font-size: 20px;">Select Date to Display Graph</h5>
+            <select id="DateList" onchange="dateOnChange()">
+                <option disabled hidden selected>Select</option>
+                <option value="August2">August 2</option>
+                <option value="August3">August 3</option>
+                <option value="August9">August 9</option>
+                <option value="August10">August 10</option>
+                <option value="August16">August 16</option>
+                <option value="August17">August 17</option>
+                <option value="August30">August 30</option>
+                <option value="August31">August 31</option>
+                <option value="September6">September 6</option>
+                <option value="September7">September 7</option>
+                <option value="September13">September 13</option>
+                <option value="September14">September 14</option>
+                <option value="September20">September 20</option>
+                <option value="September21">September 21</option>
+                <option value="September27">September 27</option>
+                <option value="September28">September 28</option>
+                <option value="October4">October 4</option>
+                <option value="October5">October 5</option>
+                <option value="October11">October 11</option>
+                <option value="October13">October 12</option>
+                <option value="October18">October 18</option>
+                <option value="October19">October 19</option>
+                <option value="October25">October 25</option>
+                <option value="October26">October 26</option>
+                <option value="November1">November 1</option>
+                <option value="November2">November 2</option>
+                <option value="November8">November 8</option>
+                <option value="November9">November 9</option>
+                <option value="November15">November 15</option>
+                <option value="November16">November 16</option>
+                <option value="November22">November 22</option>
+                <option value="November23">November 23</option>
+                <option value="November29">November 29</option>
+                <option value="November30">November 30</option>
+                <option value="December6">December 6</option>
+                <option value="December7">December 7</option>
+                <option value="December13">December 13</option>
+                <option value="December14">December 14</option>
+                <option value="December20">December 20</option>
+                <option value="December21">December 21</option>
+                <option value="December27">December 27</option>
+                <option value="December28">December 28</option>
+            </select>
+
+            <h5 style="font-size: 20px;">Compare Date</h5>
+            <select id="CompareDateList" onchange="compareOnChange()">
+                <option disabled hidden selected>Select</option>
+                <option value="August2">August 2</option>
+                <option value="August3">August 3</option>
+                <option value="August9">August 9</option>
+                <option value="August10">August 10</option>
+                <option value="August16">August 16</option>
+                <option value="August17">August 17</option>
+                <option value="August30">August 30</option>
+                <option value="August31">August 31</option>
+                <option value="September6">September 6</option>
+                <option value="September7">September 7</option>
+                <option value="September13">September 13</option>
+                <option value="September14">September 14</option>
+                <option value="September20">September 20</option>
+                <option value="September21">September 21</option>
+                <option value="September27">September 27</option>
+                <option value="September28">September 28</option>
+                <option value="October4">October 4</option>
+                <option value="October5">October 5</option>
+                <option value="October11">October 11</option>
+                <option value="October13">October 12</option>
+                <option value="October18">October 18</option>
+                <option value="October19">October 19</option>
+                <option value="October25">October 25</option>
+                <option value="October26">October 26</option>
+                <option value="November1">November 1</option>
+                <option value="November2">November 2</option>
+                <option value="November8">November 8</option>
+                <option value="November9">November 9</option>
+                <option value="November15">November 15</option>
+                <option value="November16">November 16</option>
+                <option value="November22">November 22</option>
+                <option value="November23">November 23</option>
+                <option value="November29">November 29</option>
+                <option value="November30">November 30</option>
+                <option value="December6">December 6</option>
+                <option value="December7">December 7</option>
+                <option value="December13">December 13</option>
+                <option value="December14">December 14</option>
+                <option value="December20">December 20</option>
+                <option value="December21">December 21</option>
+                <option value="December27">December 27</option>
+                <option value="December28">December 28</option>
+            </select>
             
-            <option value="Date1">Date 1</option>
-            <option value="Date2">Date 2</option>
-            <option value="Date3">Date 3</option>
-            <option value="Date4">Date 4</option>
-            <option value="Date5">Date 5</option>
-            <option value="Date6">Date 6</option>
-            <option value="Date7">Date 7</option>
-            <option value="Date8">Date 8</option>
-            <option value="Date9">Date 9</option>
-            <option value="Date10">Date 10</option>
-            <option value="Date11">Date 11</option>
-            <option value="Date12">Date 12</option>
-        </select>
-        <script type="text/javascript">
-            function getSelectValue(){
-            var selectedValue = document.getElementById("list");
-            selectedValue.onchange = function(){
-                var userOption = this.options[this.selectedIndex];
-                if(userOption.value != "nothing"){
-                    console.log(userOption.value)
-                }
-            }
-            }
-        </script>
-        
+            <h2>Graph</h2>
+            <script src="geolocation.js"></script>
+        </div>
 
-        <h5>Compare 2 Graphs</h5>\
-
-
+        <div id="vizContainer" style="width:800px; height:700px;"></div>
+        <div id="vizCompareContainer" style="width:800px; height:700px;"></div>
     </body> 
 
 
