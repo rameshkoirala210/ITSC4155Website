@@ -8,7 +8,7 @@
         August17: "https://public.tableau.com/views/Aug17Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         August30: "https://public.tableau.com/views/Aug30Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         August31: "https://public.tableau.com/views/Aug31Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
-        September6: "https://public.tableau.com/app/profile/mihir.vashi/viz/Sep06Errors/Dashboard1?publish=yes",
+        September6: "https://public.tableau.com/views/Sep06Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         September7: "https://public.tableau.com/views/Sep07Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         September13: "https://public.tableau.com/views/Sep13Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         September14: "https://public.tableau.com/views/Sep14Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
@@ -22,22 +22,22 @@
         October12: "https://public.tableau.com/views/Oct12Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         October18: "https://public.tableau.com/views/Oct18Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         October19: "https://public.tableau.com/views/Oct19Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
-        October25: "",
-        October26: "",
-        November1: "",
-        November2: "",
-        November8: "",
-        November9: "",
-        November15: "",
-        November16: "",
-        November22: "",
-        November23: "",
-        November29: "",
-        November30: "",
-        December6: "",
-        December7: "",
-        December13: "",
-        December14: "",
+        October25: "https://public.tableau.com/views/Oct25Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        October26: "https://public.tableau.com/views/Oct26Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        November1: "https://public.tableau.com/views/Nov1Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        November2: "https://public.tableau.com/views/Nov02Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        November8: "https://public.tableau.com/views/Nov02Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        November9: "https://public.tableau.com/views/Nov09Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        November15: "https://public.tableau.com/views/Nov15Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        November16: "https://public.tableau.com/views/Nov16Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        November22: "https://public.tableau.com/views/Nov22Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        November23: "https://public.tableau.com/views/Nov23Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        November29: "https://public.tableau.com/views/Nov29Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        November30: "https://public.tableau.com/views/Nov30Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        December6: "https://public.tableau.com/views/Dec06Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        December7: "https://public.tableau.com/views/Dec06Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        December13: "https://public.tableau.com/views/Dec13Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        December14: "https://public.tableau.com/views/Dec14Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         December20: "",
         December21: "",
         December27: "",
@@ -70,7 +70,6 @@
     var viz2;
 
     function compareOnChange() {
-        //create stuff here
         console.log("ON CHANGE");
         var containerDiv = document.getElementById("vizCompareContainer");
         var selectedValue = document.getElementById("CompareDateList").value;
@@ -81,7 +80,6 @@
             onFirstInteractive: function () {
                 console.log("finished loading.");
             }
-            //make it bigger
         };
 
         if (viz2 != null) {
@@ -89,5 +87,3 @@
         }
         viz2 = new tableau.Viz(containerDiv, dict[selectedValue], options);
     }
-
-    //https://community.tableau.com/s/question/0D54T00000C5ja9SAB/another-viz-is-already-present-in-element-divtableauviz-error
