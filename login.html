@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Login Page</title>
+        
+        <style>
+            body{
+                background-image: url(https://i0.wp.com/www.agent49.net/wp-content/uploads/2020/10/a49-clt-49ers-green-bkg-zoom-mirror.jpg?fit=1920%2C1080&ssl=1.charlotte.edu/sites/brand.charlotte.edu/files/media/Meeting%20Background%20Screens.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                color: rgb(185, 151, 91);
+                background-color: rgb(28, 98, 64);
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function login(){
+                var un=document.forms["myform"]["uname"].value;
+                var pass=document.forms["myform"]["pwd"].value;
+
+
+                if(un=="admin"){
+                    if(pass=="admin"){
+                        window.open("CampusWiFiHomepage.html");
+                        window.close();
+                        
+                    } else {
+                        alert("Incorrect Username or Password");
+                    }
+                } else {
+                    alert("Incorrect Username or Password");
+                }
+            }
+
+        </script>
+
+        <form name = "myform" style="text-align: left; font-size: 20px;">
+            <b>Username:<input type="text" name="uname"><br>
+            <b>Password: <input type="password" name="pwd"><br>
+            <input type="submit" onclick="login()">
+        </form>
+
+    </body>
+
+</html>
