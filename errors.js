@@ -38,10 +38,10 @@
         December7: "https://public.tableau.com/views/Dec06Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         December13: "https://public.tableau.com/views/Dec13Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         December14: "https://public.tableau.com/views/Dec14Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
-        December20: "",
-        December21: "",
-        December27: "",
-        December28: "",
+        December20: "https://public.tableau.com/views/Dec20Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        December21: "https://public.tableau.com/views/Dec21Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        December27: "https://public.tableau.com/views/Dec27Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        December28: "https://public.tableau.com/views/Dec28Errors/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
     }
 
     var viz;
