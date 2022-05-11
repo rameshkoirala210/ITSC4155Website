@@ -24,8 +24,7 @@
                 if(un=="admin"){
                     if(pass=="admin"){
                         window.open("CampusWiFiHomepage.html");
-                        window.close();
-                        
+                        window.close();   
                     } else {
                         alert("Incorrect Username or Password");
                     }
@@ -36,12 +35,17 @@
 
         </script>
 
-        <form name = "myform" style="text-align: left; font-size: 20px;">
-            <b>Username:<input type="text" name="uname"><br>
-            <b>Password: <input type="password" name="pwd"><br>
-            <input type="submit" onclick="login()">
-        </form>
+        <h1 style="text-align: center; font-size: 50px;">ITSC 4l55 Team 13</h1>
 
+        <form name = "myform" style="text-align: center; font-size: 20px;">
+            <b>Username:<input type="text" name="uname"><br>
+            <b>Password :<input type="password" name="pwd"><br>
+            <br>
+            <button onclick = "login()" style="background-color: black; color: rgb(185, 151, 91); font-size: 20px; width: auto;">
+                Login
+            </button>
+        </form>
+        
     </body>
 
 </html>
