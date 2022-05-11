@@ -1,5 +1,5 @@
 var dict = {
-    August2: "https://public.tableau.com/views/Aug02EbB/Sheet1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+    August2: "https://public.tableau.com/views/Aug02EbB/Sheet1?:language=en-US&:display_count=n&:origin=viz_share_link",
     August3: "https://public.tableau.com/views/Aug03EBB/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
     August9: "https://public.tableau.com/views/Aug09EBB/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
     August10: "https://public.tableau.com/views/Aug10EBB/Sheet1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
