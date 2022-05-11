@@ -19,7 +19,7 @@
         October4: "https://public.tableau.com/views/October4NumberofConnectionstoAPs/October4NumberofConnectionstoAPs_?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         October5: "https://public.tableau.com/views/October5NumberofConnectionstoAPs/October5NumberofConnectionstoAPs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         October11: "https://public.tableau.com/views/October11NumberofConnectionstoAPs/October11NumberofConnectionstoAPs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
-        October12: "https://public.tableau.com/views/October12NumberofConnectionstoAPs/October12NumberofConnectionstoAPs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        October12: "https://public.tableau.com/views/October12NumberofConnectionstoAPs/October12NumberofConnectionstoAPs?:language=en-US&:display_count=n&:origin=viz_share_link",
         October18: "https://public.tableau.com/views/October18NumberofConnectionstoAPs/October18NumberofConnectionstoAPs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         October19: "https://public.tableau.com/views/October19NumberofConnectionstoAPs/October19NumberofConnectionstoAPs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
         October25: "https://public.tableau.com/views/October25NumberofConnectionstoAPs/October25NumberofConnectionstoAPs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
