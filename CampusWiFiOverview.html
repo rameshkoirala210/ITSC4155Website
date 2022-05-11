@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Visualization 4</title>
+        <style>
+            body{
+                background-size: 100%;
+                background-repeat: no-repeat;
+                color: rgb(185, 151, 91);
+                background-color: rgb(28, 98, 64);
+            }
+        </style>
+
+        <script type="text/javascript"
+         src="https://public.tableau.com/javascripts/api/tableau-2.min.js">
+        </script>
+
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align: center; font-size: 50px;">Overview</h1>
+
+        <div class="container" style="text-align: center;">
+            <h5 style="font-size: 20px;">Select Date to Display Graph</h5>
+            <select id="DateList" onchange="dateOnChange()">
+                <option disabled hidden selected>Select</option>
+                <option value="lineChart">Line Chart</option>
+                <option value="barChart">Bar Chart</option>
+            </select>
+
+            <h5 style="font-size: 20px;">Compare Date</h5>
+            <select id="CompareDateList" onchange="compareOnChange()">
+                <option disabled hidden selected>Select</option>
+                <option value="lineChart">Line Chart</option>
+                <option value="barChart">Bar Chart</option>
+            </select>
+            
+            <h2>Graph</h2>
+            <script src="overview.js"></script>
+        </div>
+
+        <div id="vizContainer" style="width:1000px; height:1000px;"></div><br>
+        <div id="vizCompareContainer" style="width:1000px; height:1000px;"></div>
+    </body> 
+
+
+</html>  
